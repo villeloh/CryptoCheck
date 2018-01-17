@@ -17,10 +17,9 @@ nav {
 main {
 	
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 120px 120px 120px;
 	grid-template-rows: 60px 60px;
 	grid-gap: 6%;
-	margin-right: 70%;
 	margin-top: 1%;
 	padding: 10px;
 	border: 0.2em solid #3399F3;
@@ -36,6 +35,11 @@ hr {
     border-style: inset;
     border-width: 1px;
 } 
+
+.mainContainer {
+	
+	display: inline-block;
+}
 
 .headline {
 	
@@ -81,6 +85,7 @@ hr {
 	
 	background-color: white;
 	border: 0.2em solid #3399F3;
+	width: 120px;
 }
 
 .coinName {
@@ -101,8 +106,35 @@ hr {
 	.headline {
 		font-size: 2rem;
 	}
+	
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+	
+	.coinName, .priceInE {
+		
+		font-size: 1rem;
+	}
 }
 
+@media screen and (max-width: 600px) {
+	
+	.headline {
+		font-size: 0.9rem;
+	}
+	
+	.tab {
+		font-size: 0.7rem;
+		min-width: 50px;
+		border: 0.1em solid #446E9B;
+	}
+	
+	.priceBox {
+	
+		width: 80px;
+	}
+
+}
 
 
 
