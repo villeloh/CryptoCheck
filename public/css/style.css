@@ -14,11 +14,11 @@ nav {
 	border: 0.2em solid #3399F3;
 }
 
-main {
+.priceMain {
 	
 	display: grid;
-	grid-template-columns: 120px 120px 120px;
-	grid-template-rows: 60px 60px;
+	grid-template-columns: 6rem 6rem 6rem;
+	grid-template-rows: 4rem 4rem;
 	grid-gap: 6%;
 	margin-top: 1%;
 	padding: 10px;
@@ -59,14 +59,6 @@ hr {
 	padding-right: 10%;
 }
 
-.newsTab {
-	
-	margin-left: 3%;
-}
-
-.priceTab {
-	
-}
 
 .tab {
 	
@@ -81,11 +73,19 @@ hr {
 	height: 50%;
 }
 
+.newsTab {
+	
+	margin-left: 3%;
+}
+
+.priceTab {
+	
+}
+
 .priceBox {
 	
 	background-color: white;
 	border: 0.2em solid #3399F3;
-	width: 120px;
 }
 
 .coinName {
@@ -100,6 +100,45 @@ hr {
 	font-size: 1.2rem;
 }
 
+.newsMain {
+	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 1%;
+	margin-top: 1%;
+	padding: 10px;
+	border: 0.2em solid #3399F3;
+	background-color: #dcf2f0;
+}
+
+
+.newsBox {
+	
+	background-color: white;
+	border: 0.2em solid #3399F3;
+}
+
+.newsTitle {
+	
+	padding: 0.5rem;
+	font-size: 1.2rem;
+	height: 5rem;
+	background-color: #e3e7ed;
+}
+
+.newsBlurb {
+	
+	padding: 0.5rem;
+	height: 20rem;
+}
+
+.postTime {
+	
+	padding: 0.5rem;
+	background-color: #e3e7ed;
+}
+
 
 @media screen and (max-width: 1200px) {
 	
@@ -107,14 +146,16 @@ hr {
 		font-size: 2rem;
 	}
 	
-	main {
-		grid-template-columns: 1fr 1fr 1fr;
-	}
-	
 	.coinName, .priceInE {
 		
 		font-size: 1rem;
 	}
+	
+	.newsMain {
+		
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+	
 }
 
 @media screen and (max-width: 600px) {
@@ -129,28 +170,28 @@ hr {
 		border: 0.1em solid #446E9B;
 	}
 	
-	.priceBox {
+	.newsMain {
 	
-		width: 80px;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
-
+	
+	.newsBlurb {
+	
+		padding: 0.5rem;
+		height: 28rem;
+		font-size: 0.8rem;
+	}
+	
+	.newsTitle {
+	
+		padding: 0.5rem;
+		font-size: 0.9rem;
+		height: 8.5rem;
+	}
+	
+	.postTime {
+		
+		font-size: 0.8rem;
+	}
+	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

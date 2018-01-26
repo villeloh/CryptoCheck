@@ -31,7 +31,6 @@ async function loadPrices(arrayOfCoins) {
 						<div class="priceInE">${coins[i].EUR}</div>
 						</div>`;
 	}
-	
 } // end loadPrices()
 
 function fetchPrices(coinArray) {
@@ -40,7 +39,6 @@ function fetchPrices(coinArray) {
 	
 	return Promise.all(requests)
 	.then( responses => Promise.all(
-		responses.map(r => r.json())))// map responses into json (waiting for all to be ready before proceeding)
+		responses.map(r => r.json())))// map responses to json (waiting for all to be ready before proceeding)
 	.catch(error => console.log(error.message)); // TODO: try to handle error; throw it onwards if unable
-
 } // end fetchPrices()
