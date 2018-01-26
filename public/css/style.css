@@ -33,17 +33,19 @@ hr {
 	grid-template-columns: 6rem 6rem 6rem;
 	grid-template-rows: 4rem 4rem;
 	grid-gap: 6%;
-	margin: 1%;
 	padding: 0.5rem;
 	border: 0.2em solid #3399F3;
 	background-color: #dcf2f0;
-	width: 100%;
+	justify-content: space-evenly;
 }
 
 
 .mainContainer {
 	
-	display: inline-block;
+	margin-top: 0.5%;
+	margin-left: 0.3%;
+	display: flex;
+	width: 100%;
 }
 
 .headline {
@@ -116,6 +118,8 @@ hr {
 	padding: 0.5rem;
 	border: 0.2em solid #3399F3;
 	background-color: #dcf2f0;
+	align-content: space-evenly;	
+	justify-content: space-evenly;
 }
 
 
