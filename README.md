@@ -1,5 +1,5 @@
-# CryptoCheck -- 
-## a simple app for checking cryptocurrency prices & news items
+# CryptoCheck 
+## -- a simple app for checking cryptocurrency prices & news items
 
 * Using plain html/js/css, fetches prices and news headlines + blurbs about the crypto-coins that I currently own
 
@@ -7,6 +7,8 @@
 
 * Todo list: 
 
-..1. Register/login functionality; letting the user choose the coins whose prices they want to see
+  1. Register/login functionality; letting the user choose the coins whose prices they want to see
 
-..2. Better styling/responsiveness for the app (with Bootstrap or similar)
+  2. Better styling/responsiveness for the app (with Bootstrap or similar)
+
+___
