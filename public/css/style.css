@@ -27,26 +27,6 @@ hr {
     border-width: 1px;
 } 
 
-.priceMain {
-	
-	display: grid;
-	grid-template-columns: 6rem 6rem 6rem;
-	grid-template-rows: 4rem 4rem;
-	grid-gap: 6%;
-	padding: 0.5rem;
-	border: 0.2em solid #3399F3;
-	background-color: #dcf2f0;
-	justify-content: space-evenly;
-}
-
-
-.mainContainer {
-	
-	margin-top: 0.5%;
-	margin-left: 0.3%;
-	display: flex;
-}
-
 .headline {
 	
 	font-size: 3rem;
@@ -60,11 +40,11 @@ hr {
 	height: 30%;
 	width: 100%;
 	margin: 0;
+	margin-bottom: 0.25rem;
 	display: flex;
 	justify-content: flex-end;
 	padding-right: 10%;
 }
-
 
 .tab {
 	
@@ -77,6 +57,13 @@ hr {
 	padding: 5px;
 	min-width: 100px;
 	height: 50%;
+	text-decoration: none;
+}
+
+.tab:hover {
+	
+	text-decoration: underline;
+	border: 0.2em solid red;
 }
 
 .newsTab {
@@ -86,6 +73,26 @@ hr {
 
 .priceTab {
 	
+}
+
+.mainContainer {
+	
+	margin-top: 0.5%;
+	margin-left: 0.3%;
+	display: flex;
+}
+
+.priceMain {
+	
+	display: grid;
+	grid-template-columns: 6rem 6rem 6rem;
+	grid-template-rows: 4rem 4rem;
+	grid-column-gap: 1.2rem;
+	grid-row-gap: 0.7rem;
+	padding: 0.5rem;
+	border: 0.2em solid #3399F3;
+	background-color: #dcf2f0;
+	justify-content: space-evenly;
 }
 
 .priceBox {
@@ -112,7 +119,8 @@ hr {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: auto;
-	grid-gap: 1%;
+	grid-column-gap: 1rem;
+	grid-row-gap: 1rem;
 	margin: 0.3%;
 	padding: 0.5rem;
 	border: 0.2em solid #3399F3;
@@ -120,7 +128,6 @@ hr {
 	align-content: space-evenly;	
 	justify-content: space-evenly;
 }
-
 
 .newsBox {
 	
@@ -147,7 +154,6 @@ hr {
 	padding: 0.5rem;
 	background-color: #e3e7ed;
 }
-
 
 @media screen and (max-width: 1200px) {
 	
