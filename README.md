@@ -5,6 +5,8 @@
 
 * Uses this api for both prices and news items (as it's free, public and easy to use): https://min-api.cryptocompare.com/
 
+* The app may be viewed here: https://crypto-check-ville.herokuapp.com/
+
 * Todo list: 
 
   1. Register/login functionality; letting the user choose the coins whose prices they want to see

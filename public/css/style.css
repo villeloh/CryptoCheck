@@ -188,7 +188,15 @@ hr {
 	.newsMain {
 	
 		grid-template-columns: 1fr 1fr 1fr;
+		grid-column-gap: 0.5rem;
+		grid-row-gap: 0.5rem;
 	}
+	
+	.newsBox {
+	
+		max-width: 106px;
+	}
+
 	
 	.newsBlurb {
 	
