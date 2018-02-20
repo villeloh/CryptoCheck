@@ -6,6 +6,9 @@ document.body.addEventListener('onload', loadNews());
 
 async function loadNews() {
 	
+	const titleMaxLength = 80;
+	const blurbMaxLength = 560;
+	
 	const main = document.querySelector('main');
 	
 	const news = await fetchNews(baseUrl);
@@ -17,8 +20,8 @@ async function loadNews() {
 		const formattedDateString = formatDate(postTimeMs);
 		
 		// truncate these as needed, so they fit inside the uniformly shaped divs
-		const title = news[i].title.length > 110 ? news[i].title.substring(0,107) + "..." : news[i].title;
-		const blurb = news[i].body.length > 700 ? news[i].body.substring(0,697) + "..." : news[i].body;
+		const title = news[i].title.length > titleMaxLength ? news[i].title.substring(0, titleMaxLength-3) + "..." : news[i].title;
+		const blurb = news[i].body.length > blurbMaxLength ? news[i].body.substring(0, blurbMaxLength-3) + "..." : news[i].body;
 
 		main.innerHTML += `<div class="newsBox"> 
 						<div class="newsTitle"><a target="_blank" href="${news[i].url}">${title}</a></div>
