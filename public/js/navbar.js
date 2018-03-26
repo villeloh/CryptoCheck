@@ -7,8 +7,8 @@ document.body.addEventListener('onload', addNavbar());
 function addNavbar() {
 	
 	nav.innerHTML += `<div class="lowerNavPart"> 
-						<a href="index.html" class="tab priceTab">Prices</a>
-						<a href="news.html" class="tab newsTab">News</a>
+						<a href="index.html" class="nav-tabs tab priceTab">Prices</a>
+						<a href="news.html" class="nav-tabs tab newsTab">News</a>
 					</div>`
 					
 	setSelectedTab();
